@@ -4,7 +4,7 @@
     {
       "src": [
         {
-          "src": "../src",
+          "src": "./EcommerceApp",
           "files": [
             "**/*.csproj"
           ]
@@ -33,14 +33,12 @@
     ],
     "output": "_site",
     "template": [
-      "default",
-      "modern"
+      "default"
     ],
     "globalMetadata": {
       "_appName": "EcommerceApp API Docs",
       "_appTitle": "EcommerceApp API Docs",
-      "_enableSearch": true,
-      "pdf": true
+      "_enableSearch": true
     }
   }
 }
