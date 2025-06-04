@@ -1,7 +1,22 @@
 using EcommerceApp.Api.Models;
-namespace EcommerceApp.Api.Services;
-public interface ICartService
+
+namespace EcommerceApp.Api.Services
 {
-    double Total();
-    IEnumerable<ICartItem> Items();         
+    /// <summary>
+    /// Define el servicio de operaciones sobre el carrito de compras.
+    /// </summary>
+    public interface ICartService
+    {
+        /// <summary>
+        /// Calcula el total del carrito.
+        /// </summary>
+        /// <returns>Total acumulado en el carrito.</returns>
+        double Total();
+
+        /// <summary>
+        /// Obtiene los elementos contenidos en el carrito.
+        /// </summary>
+        /// <returns>Lista de ítems en el carrito.</returns>
+        IEnumerable<ICartItem> Items();
+    }
 }
